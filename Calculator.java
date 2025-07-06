@@ -12,7 +12,7 @@ public class Calculator{
 		System.out.print("Enter second number: ");
 		double secondNum = scanner.nextDouble();
 
-		// Operation to peform on first and second numbers
+		// Operation to perform on first and second numbers
 		System.out.println("Select one of the following operations: +, -, *, /, %");
 		System.out.print("Operation to perform: ");
 		char operation = scanner.next().charAt(0);
@@ -24,15 +24,12 @@ public class Calculator{
 		switch(operation){
 		case '+':
 			result = firstNum + secondNum;
-			System.out.println(result);
 			break;
 		case '-':
 			result = firstNum - secondNum;
-			System.out.println(result);
 			break;
 		case '*':
 			result = firstNum * secondNum;
-			System.out.println(result);
 			break;
 		case '/':
 			if(secondNum ==0){
@@ -40,11 +37,9 @@ public class Calculator{
 				break;
 			}
 			result = firstNum / secondNum;
-			System.out.println(result);
 			break;
 		case '%':
 			result = firstNum % secondNum;
-			System.out.println(result);
 			break;
 		default:
 			System.out.println("Invalid operation selected. Try again");
